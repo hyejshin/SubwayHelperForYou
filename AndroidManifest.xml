@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:versionCode="23"
+    android:versionName="1.0.23"
+    package="com.example.hyejung.easysubway">
+            <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="22" />
+            <supports-screens android:anyDensity="true" android:smallScreens="false" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application android:theme="@style/app_theme"
+        android:label="@string/app_name"
+        android:icon="@mipmap/app_icon"
+        tools:replace="android:allowBackup"
+        android:allowBackup="false" android:largeHeap="true">
+
+        <activity android:name="com.example.hyejung.easysubway.SplashActivity" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="com.example.hyejung.easysubway.StartActivity" android:label="easySubway" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name="com.example.hyejung.easysubway.MainActivity" android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.example.hyejung.easysubway.popupviews.subwaylistview.SubwayLineListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name="com.example.hyejung.easysubway.popupviews.subwaylistview.SubwayStationListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.example.hyejung.easysubway.popupviews.favoriteslistview.FavoritesListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.example.hyejung.easysubway.popupviews.stationdetailview.StationDetailViewActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.example.hyejung.easysubway.popupviews.timetableview.StationTimeTableViewActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.example.hyejung.easysubway.popupviews.mylocationview.MyLocationListActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.example.hyejung.easysubway.popupviews.realtimeview.StationRealTimeViewActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.example.hyejung.easysubway.TransferActivity" android:label="transfermain" android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="com.example.hyejung.easysubway.DisplayTransferMap" android:label="환승경로보여주기" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="com.example.hyejung.easysubway.SettingUpdate" android:label="setting" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="com.example.hyejung.easysubway.FindPath" android:label="경로찾기" android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="com.example.hyejung.easysubway.FindTime" android:label="시간계산" android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="com.example.hyejung.easysubway.FindTransferCart" android:label="빠른환승" android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        <activity android:name="com.example.hyejung.easysubway.DisplayPath" android:label="경로보여주기" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="com.example.hyejung.easysubway.SettingPage" android:label="설정페이지" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+        <activity android:name="com.example.hyejung.easysubway.SettingPopup"  android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="com.example.hyejung.easysubway.SubwayList" android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+
+        <activity
+            android:name="com.example.hyejung.easysubway.NMapViewer"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Light.NoTitleBar"></activity>
+
+    </application>
+
+</manifest>
