@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="cellPress">#ffbbd0ff</color>
+    <color name="simpleCellPress">#ffdddddd</color>
+    <color name="startCellColor">#fffff4ed</color>
+    <color name="startCellPress">#fffae0d0</color>
+    <color name="finishCellColor">#ffeafaff</color>
+    <color name="finishCellPress">#ffd0e0fa</color>
+    <color name="tabMedium">#ff2b2b2b</color>
+    <color name="tabDark">#ff1a1a1a</color>
+    <color name="tabTransparent">#05ffffff</color>
+    <color name="titleBar">#ffffffff</color>
+    <color name="BarButtonStartColor">#ff0137a9</color>
+    <color name="BarButtonCenterColor">#ff315fc0</color>
+    <color name="BarButtonEndColor">#ff7f9ddb</color>
+    <color name="BarButtonLineColor">#50000000</color>
+    <color name="ButtonStartColor">#ffffffff</color>
+    <color name="ButtonCenterColor">#fffafafa</color>
+    <color name="ButtonEndColor">#ffffffff</color>
+    <color name="ButtonLineColor">#50000000</color>
+    <color name="stationNameColor">#ff222222</color>
+    <color name="stationNameColor2">#ffffffff</color>
+    <drawable name="black_color">#ff000000</drawable>
+    <drawable name="selected_list_color">#ff32A800</drawable>
+    <drawable name="default_list_color">#ffffffff</drawable>
+    <color name="layout_color">#CD0000</color>
+    <color name="imageview_back">#FFFFFF</color>
+</resources>

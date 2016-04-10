@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowContentOverlay">@android:color/transparent</item>
+    </style>
+
+    <style name="NoTitle01" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="colorPrimary">#33AA11</item>
+        <item name="colorPrimaryDark">#FFFF00</item>
+        <item name="colorAccent">#000000</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="app_theme" parent="@android:style/Theme.NoTitleBar" />
+    <style name="bar_title_white">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="btnStyle">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">#ff66bb55</item>
+        <item name="android:layout_width">60.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+    </style>
+    <style name="tabLineBtnStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff222222</item>
+    </style>
+    <style name="naviBarButton">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="detailTabBtnStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="tabTimeBtnStyle">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff555555</item>
+    </style>
+
+
+</resources>
