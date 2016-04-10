@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="출발역"
+            android:textColor="#000000"
+            android:textSize="13pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text=" 도착역"
+            android:textColor="#000000"
+            android:textSize="13pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@drawable/station_name_btn_bgr_off"
+        android:orientation="horizontal"
+        android:weightSum="4.5">
+
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="34dp"
+            android:layout_weight="2.0"
+            android:gravity="center"
+            android:text="낙성대oooo"
+            android:textColor="#FFFFFF"
+            android:textSize="11pt" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/result_via_plus_default" />
+
+        <TextView
+            android:id="@+id/tv_arrive"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_weight="2.0"
+            android:gravity="center"
+            android:text="숙대입구oo"
+            android:textColor="#FFFFFF"
+            android:textSize="11pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="4.0">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="평일▽"
+            android:textColor="#000000"
+            android:textSize="8.4pt" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="14:00▽"
+            android:textSize="9pt" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="출발시간▽"
+            android:textSize="8.5pt" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="최단거리▽"
+            android:textSize="9pt" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.hyejung.easysubway.CustomView
+                android:layout_width="1000px"
+                android:layout_height="500px" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <TextView
+            android:id="@+id/tv_totalStation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="총 0 정거장"
+            android:textColor="#ffffff"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_totalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="00분 소요"
+            android:textColor="#ffffff"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="184dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1.4"></Spinner>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/transfer_button"
+            android:onClick="displayTransferInfo"
+            android:text="환승정보▶"
+            android:textColor="#000"
+            android:textSize="9pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

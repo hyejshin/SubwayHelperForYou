@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:background="@drawable/img_search_main_menu_bar" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/menuBarImage" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="7dp">
+        <ImageButton android:id="@+id/navi_menubar_button1" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/img_bar_menu_week1" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@string/barMenuButton" />
+        <View android:background="#aaaaaaaa" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" />
+        <ImageButton android:id="@+id/navi_menubar_button2" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/img_bar_menu_time_table" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@string/barMenuButton" />
+        <View android:background="#aaaaaaaa" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" />
+        <ImageButton android:id="@+id/navi_menubar_button4" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/img_bar_menu_station_favorites1" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@string/barMenuButton" />
+        <View android:background="#aaaaaaaa" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" />
+        <ImageButton android:id="@+id/navi_menubar_button5" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/img_bar_menu_close" android:scaleType="fitCenter" android:layout_weight="1.0" android:contentDescription="@string/barMenuButton" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".SettingUpdate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="지하철 역 정보"
+            android:textColor="#000000"
+            android:textSize="12pt"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="15dp"
+            android:id="@+id/linearLayout">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="다운로드"
+                android:textSize="7.8pt"
+                android:clickable="true"
+                android:onClick="requestAndParsing"
+                android:id="@+id/button1"
+                android:layout_alignTop="@+id/scrollView"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1.0"/>
+
+            <Button
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:text="역정보"
+                android:textSize="8pt"
+                android:clickable="true"
+                android:onClick="displayStationInfo"
+                android:id="@+id/button2"
+                android:layout_alignTop="@+id/scrollView"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_weight="1.0"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시설정보"
+                android:clickable="true"
+                android:onClick="displayFacilityInfo"
+                android:id="@+id/button3"
+                android:textSize="7pt"
+                android:layout_alignTop="@+id/scrollView"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_weight="1.0"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="영어이름"
+                android:textSize="6.7pt"
+                android:clickable="true"
+                android:onClick="displayEnglishName"
+                android:id="@+id/button4"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3">
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/view"></ScrollView>
+</RelativeLayout>

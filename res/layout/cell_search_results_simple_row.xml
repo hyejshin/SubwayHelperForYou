@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/item_simple_selector" android:layout_width="match_parent" android:layout_height="28dp">
+    <ImageView android:id="@+id/lineImage" android:layout_width="8dp" android:layout_height="28dp" android:layout_marginLeft="56dp" android:scaleType="fitXY" android:contentDescription="@string/lineIcon" />
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginLeft="80dp" android:layout_marginRight="5dp">
+        <TextView android:textSize="15dp" android:textColor="#777777" android:id="@+id/titleView01" android:layout_width="wrap_content" android:layout_height="17dp" android:layout_marginRight="3dp" />
+        <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#dd4444" android:id="@+id/timeData" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginRight="3dp" />
+        <TextView android:textSize="15dp" android:textColor="#777777" android:id="@+id/titleView02" android:layout_width="wrap_content" android:layout_height="17dp" android:layout_marginRight="3dp" />
+    </LinearLayout>
+</RelativeLayout>

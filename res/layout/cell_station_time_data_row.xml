@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="64dp">
+    <RelativeLayout android:id="@+id/timeLayout1" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginLeft="3dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/timeType11" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="15dp">
+            <TextView android:textSize="26sp" android:textColor="#ee5555" android:gravity="right" android:id="@+id/timeData10" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true" />
+            <TextView android:textSize="20sp" android:textColor="#333333" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/time_min_type1" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/timeType12" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="15dp">
+            <TextView android:textSize="26dp" android:textColor="#ee5555" android:gravity="right" android:id="@+id/timeData11" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true" />
+            <TextView android:textSize="15dp" android:textColor="#333333" android:gravity="center" android:layout_width="17dp" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/time_min_type2" android:singleLine="true" />
+            <TextView android:textSize="20dp" android:textColor="#ee5555" android:gravity="center" android:id="@+id/timeData12" android:layout_width="28dp" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:singleLine="true" />
+            <TextView android:textSize="15dp" android:textColor="#333333" android:gravity="left" android:layout_width="64dp" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginRight="3dp" android:text="@string/time_sec" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/timeType13" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="15dp">
+            <TextView android:textSize="15dp" android:textColor="#ee5555" android:gravity="center" android:id="@+id/timeDesc13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="11dp" android:text="@string/time_sec_30" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="14dp" android:textColor="#888888" android:gravity="top" android:id="@+id/timeData13" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="3dp" android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/timeData14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:textColor="#888888"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+    <View android:background="#cccccc" android:layout_width="1dp" android:layout_height="50dp" android:layout_marginLeft="3dp" android:layout_marginTop="7dp" android:layout_marginRight="3dp" android:layout_marginBottom="7dp" />
+    <RelativeLayout android:id="@+id/timeLayout2" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginRight="3dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/timeType21" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/timeData20"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|fill"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ee5555"
+                android:textSize="26dp" />
+
+            <TextView android:textSize="15dp" android:textColor="#333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/time_min_type1" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/timeType22" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="15dp">
+            <TextView android:textSize="26dp" android:textColor="#ee5555" android:gravity="right" android:id="@+id/timeData21" android:layout_width="50dp" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true" />
+            <TextView android:textSize="15dp" android:textColor="#333333" android:gravity="center" android:layout_width="17dp" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/time_min_type2" android:singleLine="true" />
+            <TextView android:textSize="20dp" android:textColor="#ee5555" android:gravity="center" android:id="@+id/timeData22" android:layout_width="28dp" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="15dp" android:textColor="#333333" android:gravity="left" android:layout_width="64dp" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/time_sec" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/timeType23" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="15dp">
+            <TextView android:textSize="15dp" android:textColor="#ee5555" android:gravity="center" android:id="@+id/timeDesc23" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="11dp" android:text="@string/time_sec_30" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="14dp" android:textColor="#888888" android:gravity="top" android:id="@+id/timeData23" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="3dp" android:layout_marginRight="3dp" android:singleLine="true" />
+        <TextView android:textSize="14dp" android:textColor="#888888" android:gravity="bottom" android:id="@+id/timeData24" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="3dp" android:layout_marginBottom="5dp" android:singleLine="true" />
+    </RelativeLayout>
+</LinearLayout>

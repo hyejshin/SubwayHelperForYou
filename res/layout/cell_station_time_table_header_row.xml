@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="#90EE90" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@+id/titleView" android:layout_width="match_parent" android:layout_height="32dp" android:shadowColor="#FFFFF0" android:shadowDx="1.0" android:shadowDy="-1.0" android:shadowRadius="1.0" />
+</RelativeLayout>

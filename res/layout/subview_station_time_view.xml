@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="260dp">
+    <RelativeLayout android:id="@+id/tabSubView" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="33dp" android:layout_weight="1.0">
+        <Button android:textColor="@color/button_text_color" android:gravity="center" android:id="@+id/lineButton1" android:background="@drawable/line_tab_button" android:paddingTop="8dp" android:visibility="visible" android:layout_width="83dp" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" style="@style/tabLineBtnStyle" />
+        <Button android:textColor="@color/button_text_color" android:gravity="center" android:id="@+id/lineButton2" android:background="@drawable/line_tab_button" android:paddingTop="8dp" android:visibility="invisible" android:layout_width="83dp" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_toRightOf="@+id/lineButton1" style="@style/tabLineBtnStyle" />
+        <Button android:textColor="@color/button_text_color" android:gravity="center" android:id="@+id/lineButton3" android:background="@drawable/line_tab_button" android:paddingTop="8dp" android:visibility="invisible" android:layout_width="83dp" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_toRightOf="@+id/lineButton2" style="@style/tabLineBtnStyle" />
+        <Button android:textColor="@color/button_text_color" android:gravity="center" android:id="@+id/lineButton4" android:background="@drawable/line_tab_button" android:paddingTop="8dp" android:visibility="invisible" android:layout_width="83dp" android:layout_height="match_parent" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_toRightOf="@+id/lineButton3" style="@style/tabLineBtnStyle" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/nameSubView" android:background="@drawable/img_station_name" android:layout_width="match_parent" android:layout_height="58dp" android:weightSum="8.0" android:layout_below="@+id/tabSubView">
+        <TextView android:textSize="14dp" android:textColor="@color/stationNameColor" android:gravity="center" android:id="@+id/prevButton" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="3.0" />
+        <RelativeLayout android:orientation="horizontal" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2.0">
+            <TextView android:textSize="20dp" android:textColor="@color/stationNameColor" android:gravity="center" android:id="@+id/stationName1" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/nameSubView2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp" android:layout_marginBottom="2dp">
+                <TextView android:textSize="18dp" android:textColor="@color/stationNameColor" android:gravity="center" android:id="@+id/stationName2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="14dp" android:textColor="@color/stationNameColor" android:gravity="center" android:id="@+id/stationName3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-3dp" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="14dp" android:textColor="@color/stationNameColor" android:gravity="center" android:id="@+id/nextButton" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="3.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#fffff0" android:visibility="visible" android:layout_width="match_parent" android:layout_height="175dp" android:layout_below="@+id/nameSubView">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/timeTableTabView" android:background="#ffffff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="42dp" android:layout_weight="0.0">
+            <LinearLayout android:orientation="horizontal" android:background="#00ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="4dp">
+                <Button android:textColor="@drawable/button_text_color03" android:id="@+id/time_tab_button1" android:background="@drawable/img_time_tab_button" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/timeTableTab1" android:layout_weight="1.0" style="@style/tabTimeBtnStyle" />
+                <Button android:textColor="@drawable/button_text_color03" android:id="@+id/time_tab_button2" android:background="@drawable/img_time_tab_button" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/timeTableTab2" android:layout_weight="1.0" style="@style/tabTimeBtnStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <ListView android:id="@+id/timeTableListView" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ListView android:id="@+id/realTimeListView" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <RelativeLayout android:id="@+id/timeLoadingView" android:background="#ffffff" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="16dp" android:textColor="#555555" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/loadingTextView" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="40dp" android:text="@string/realTimeLoadingText1" />
+                    <ProgressBar android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="#fffff0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <View android:background="#333333" android:layout_width="match_parent" android:layout_height="1dp" />
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:background="#eeeeee" android:paddingLeft="10dp" android:paddingTop="1dp" android:paddingRight="10dp" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="28dp" android:weightSum="3.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@+id/infoImage01" android:layout_width="28dp" android:layout_height="25dp" android:src="@drawable/img_addon_info_icon1_1" android:scaleType="fitCenter" android:contentDescription="@string/imageIcon" />
+                    <TextView android:textSize="15dp" android:textColor="#885555" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/infoValue01" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@+id/infoImage02" android:layout_width="28dp" android:layout_height="25dp" android:src="@drawable/img_addon_info_icon1_1" android:scaleType="fitCenter" android:contentDescription="@string/imageIcon" />
+                    <TextView android:textSize="15dp" android:textColor="#885555" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/infoValue02" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <ImageView android:id="@+id/infoImage03" android:layout_width="28dp" android:layout_height="25dp" android:src="@drawable/img_addon_info_icon1_1" android:scaleType="fitCenter" android:contentDescription="@string/imageIcon" />
+                    <TextView android:textSize="15dp" android:textColor="#885555" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/infoValue03" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#333333" android:layout_width="match_parent" android:layout_height="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

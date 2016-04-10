@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/menuBer" android:layout_width="match_parent" android:layout_height="60dp" />
+    <LinearLayout android:orientation="horizontal" android:id="@+id/stationNameView" android:layout_width="match_parent" android:layout_height="120dp" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+        <Button android:textColor="@drawable/button_text_color01" android:id="@+id/info_tab_button1" android:background="@drawable/img_detail_tab_button" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/detailTab1" android:layout_weight="1.0" style="@style/detailTabBtnStyle" />
+        <Button android:textColor="@drawable/button_text_color01" android:id="@+id/info_tab_button2" android:background="@drawable/img_detail_tab_button" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/detailTab2" android:layout_weight="1.0" style="@style/detailTabBtnStyle" />
+        <Button android:textColor="@drawable/button_text_color01" android:id="@+id/info_tab_button3" android:background="@drawable/img_detail_tab_button" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/detailTab3" android:layout_weight="1.0" style="@style/detailTabBtnStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/contentView" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

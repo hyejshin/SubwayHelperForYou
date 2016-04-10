@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/backView" android:background="#ffff00" android:layout_width="match_parent" android:layout_height="36dp" android:alpha="0.2" />
+    <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="#555555" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/titleView" android:layout_width="match_parent" android:layout_height="38dp" />
+</RelativeLayout>

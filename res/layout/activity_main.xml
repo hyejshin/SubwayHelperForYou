@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="#ffffff" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/mainLayout" 
+        android:background="#ffffff" 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" 
+            android:background="#ffffff" 
+            android:layout_width="match_parent" 
+            android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/mapLayout" 
+                android:background="#ffffff" 
+                android:layout_width="match_parent" 
+                android:layout_height="0dp" android:layout_weight="1.0">
+                <RelativeLayout android:id="@+id/mapImageLayout" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <RelativeLayout android:id="@+id/mapSubLayout" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <RelativeLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/searchInfoLayout" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/img_banner_window" android:layout_width="match_parent" android:layout_height="45dp" />
+    </RelativeLayout>
+        <RelativeLayout android:id="@+id/selectedLayout" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

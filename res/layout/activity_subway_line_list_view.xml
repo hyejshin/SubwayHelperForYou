@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/titleBer" android:layout_width="match_parent" android:layout_height="55dp" />
+    <RelativeLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@+id/searchBer" android:background="@drawable/img_bar_image_blue" android:layout_width="match_parent" android:layout_height="50dp">
+        <EditText android:textSize="18dp" android:id="@+id/search_edit_text" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="83dp" android:layout_marginBottom="3dp" android:hint="@string/searchViewHint" android:lines="1" android:singleLine="true" android:inputType="text" android:imeOptions="actionNone|actionGo|actionSearch|actionNext|actionDone|actionPrevious" />
+        <Button android:textSize="16dp" android:textStyle="bold" android:id="@+id/search_button" android:background="@drawable/bar_button_indicator" android:layout_width="70dp" android:layout_height="match_parent" android:layout_margin="5dp" android:text="@string/searchButton" android:layout_alignParentRight="true" style="@style/naviBarButton" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/listView" android:longClickable="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

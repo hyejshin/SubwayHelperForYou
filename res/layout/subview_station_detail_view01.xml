@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:background="#fffffc" android:layout_width="match_parent" android:layout_height="65dp" android:layout_margin="6dp" android:weightSum="4.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="16dp" android:textColor="#dd6666" android:gravity="center" android:layout_width="match_parent" android:layout_height="18dp" android:layout_marginBottom="5dp" android:text="@string/firstTimeTitle" />
+                    <View android:background="#aaaaaaaa" android:layout_width="match_parent" android:layout_height="1dp" />
+                    <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="center" android:id="@+id/firstTime1" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="3dp" />
+                    <TextView android:textSize="16dp" android:textColor="#777777" android:gravity="center" android:id="@+id/firstData1" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginBottom="3dp" />
+                </LinearLayout>
+                <View android:background="#aaaaaaaa" android:layout_width="1dp" android:layout_height="match_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="16dp" android:textColor="#dd6666" android:gravity="center" android:layout_width="match_parent" android:layout_height="18dp" android:layout_marginBottom="5dp" android:text="@string/lastTimeTitle" />
+                    <View android:background="#aaaaaaaa" android:layout_width="match_parent" android:layout_height="1dp" />
+                    <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="center" android:id="@+id/lastTime1" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="3dp" />
+                    <TextView android:textSize="16dp" android:textColor="#777777" android:gravity="center" android:id="@+id/lastData1" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginBottom="3dp" />
+                </LinearLayout>
+                <View android:background="#aaaaaaaa" android:layout_width="1dp" android:layout_height="match_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="16dp" android:textColor="#dd6666" android:gravity="center" android:layout_width="match_parent" android:layout_height="18dp" android:layout_marginBottom="5dp" android:text="@string/firstTimeTitle" />
+                    <View android:background="#aaaaaaaa" android:layout_width="match_parent" android:layout_height="1dp" />
+                    <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="center" android:id="@+id/firstTime2" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="3dp" />
+                    <TextView android:textSize="16dp" android:textColor="#777777" android:gravity="center" android:id="@+id/firstData2" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginBottom="3dp" />
+                </LinearLayout>
+                <View android:background="#aaaaaaaa" android:layout_width="1dp" android:layout_height="match_parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="16dp" android:textColor="#dd6666" android:gravity="center" android:layout_width="match_parent" android:layout_height="18dp" android:layout_marginBottom="5dp" android:text="@string/lastTimeTitle" />
+                    <View android:background="#aaaaaaaa" android:layout_width="match_parent" android:layout_height="1dp" />
+                    <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="center" android:id="@+id/lastTime2" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="3dp" />
+                    <TextView android:textSize="16dp" android:textColor="#777777" android:gravity="center" android:id="@+id/lastData2" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginBottom="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#fffff0" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#333333" android:layout_width="match_parent" android:layout_height="1dp" />
+                <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_margin="5dp" android:text="@string/TimeTableTitle" />
+                <View android:background="#333333" android:layout_width="match_parent" android:layout_height="1dp" />
+            </LinearLayout>
+            <ListView android:id="@+id/listView" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:longClickable="false" android:layout_width="match_parent" android:layout_height="160dp" android:choiceMode="none" />
+            <LinearLayout android:orientation="vertical" android:background="#fffff0" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#333333" android:layout_width="match_parent" android:layout_height="1dp" />
+                <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:background="#eeeeee" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="35dp" android:weightSum="3.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@+id/infoImage01" android:layout_width="28dp" android:layout_height="25dp" android:src="@drawable/img_addon_info_icon1_1" android:scaleType="fitCenter" android:contentDescription="@string/imageIcon" />
+                        <TextView android:textSize="15dp" android:textColor="#885555" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/infoValue01" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@+id/infoImage02" android:layout_width="28dp" android:layout_height="25dp" android:src="@drawable/img_addon_info_icon1_1" android:scaleType="fitCenter" android:contentDescription="@string/imageIcon" />
+                        <TextView android:textSize="15dp" android:textColor="#885555" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/infoValue02" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@+id/infoImage03" android:layout_width="28dp" android:layout_height="25dp" android:src="@drawable/img_addon_info_icon1_1" android:scaleType="fitCenter" android:contentDescription="@string/imageIcon" />
+                        <TextView android:textSize="15dp" android:textColor="#885555" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/infoValue03" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#333333" android:layout_width="match_parent" android:layout_height="1dp" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#fffff0" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15dp" android:textColor="#cc5555" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="#fff9f7" android:paddingLeft="12dp" android:paddingTop="5dp" android:paddingRight="12dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/SubwayNoticeTitle" />
+                <View android:background="#333333" android:layout_width="match_parent" android:layout_height="1dp" />
+                <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="center" android:layout_width="match_parent" android:layout_height="20dp" android:layout_margin="5dp" android:text="@string/SubwayInfoTitle" />
+                <View android:background="#333333" android:layout_width="match_parent" android:layout_height="1dp" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="50dp" android:weightSum="2.0">
+                    <Button android:textSize="15dp" android:id="@+id/goto_site_naver" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:text="@string/NAVER" android:layout_weight="1.0" />
+                    <Button android:textSize="15dp" android:id="@+id/goto_site_daum" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:text="@string/DAUM" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
